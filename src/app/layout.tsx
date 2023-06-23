@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 import Navbar from '@/components/Navbar';
 import { Toaster } from '@/components/ui/Toaster';
 import Providers from '@/components/Providers';
+import { ThemeProvider } from '@/components/ThemeProvider';
 
 export const metadata = {
   title: 'Unwind',
@@ -27,19 +28,21 @@ export default function RootLayout({
         inter.className
       )}
     >
-      <body className="min-h-screen pt-12 antialiased bg-slate-50">
-        <Providers>
-          {/* @ts-expect-error server component */}
-          <Navbar />
+      <body className="min-h-screen pt-12 antialiased bg-white dark:bg-slate-900">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Providers>
+            {/* @ts-expect-error server component */}
+            <Navbar />
 
-          {authModal}
+            {authModal}
 
-          <div className="container h-full pt-12 mx-auto max-w-7xl">
-            {children}
-          </div>
+            <div className="container h-full pt-12 mx-auto max-w-7xl">
+              {children}
+            </div>
 
-          <Toaster />
-        </Providers>
+            <Toaster />
+          </Providers>
+        </ThemeProvider>
       </body>
     </html>
   );

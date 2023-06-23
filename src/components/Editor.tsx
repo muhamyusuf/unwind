@@ -184,7 +184,7 @@ export const Editor: React.FC<EditorProps> = ({ subredditId }) => {
   const { ref: titleRef, ...rest } = register('title');
 
   return (
-    <div className="w-full p-4 border rounded-lg bg-zinc-50 border-zinc-200">
+    <div className="w-full p-4 border rounded-lg dark:bg-slate-900 dark:border dark:border-slate-800 bg-zinc-50 border-zinc-200">
       <form
         id="subreddit-post-form"
         className="w-fit"
@@ -199,12 +199,12 @@ export const Editor: React.FC<EditorProps> = ({ subredditId }) => {
             }}
             {...rest}
             placeholder="Title"
-            className="w-full overflow-hidden text-5xl font-bold bg-transparent appearance-none resize-none focus:outline-none"
+            className="w-full overflow-hidden text-5xl font-bold bg-transparent appearance-none resize-none focus:outline-none dark:text-white"
           />
           <div id="editor" className="min-h-[500px]" />
           <p className="text-sm text-gray-500">
             Use{' '}
-            <kbd className="px-1 text-xs uppercase border rounded-md bg-muted">
+            <kbd className="px-1 text-xs uppercase border rounded-md bg-muted dark:bg-black">
               Tab
             </kbd>{' '}
             to open the command menu.

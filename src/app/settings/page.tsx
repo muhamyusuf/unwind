@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 
 import { UserNameForm } from '@/components/UserNameForm';
 import { authOptions, getAuthSession } from '@/lib/auth';
+import { ThemeSwitcher } from '@/components/ThemeSwitcher';
 
 export const metadata: Metadata = {
   title: 'Settings | Unwind',
@@ -28,6 +29,7 @@ export default async function SettingsPage() {
               username: session.user.username || '',
             }}
           />
+          <ThemeSwitcher />
         </div>
       </div>
     </div>

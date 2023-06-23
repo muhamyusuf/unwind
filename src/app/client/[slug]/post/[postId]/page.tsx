@@ -61,12 +61,12 @@ const SubRedditPostPage = async ({ params }: SubRedditPostPageProps) => {
           />
         </Suspense>
 
-        <div className="flex-1 w-full p-4 bg-white rounded-sm sm:w-0">
+        <div className="flex-1 w-full p-4 bg-white rounded-sm dark:bg-slate-900 dark:border dark:border-slate-800 sm:w-0">
           <p className="mt-1 text-xs text-gray-500 truncate max-h-40">
             Posted by {post?.author.username ?? cachedPost.authorUsername}{' '}
             {formatTimeToNow(new Date(post?.createdAt ?? cachedPost.createdAt))}
           </p>
-          <h1 className="py-2 text-xl font-semibold leading-6 text-gray-900">
+          <h1 className="py-2 text-xl font-semibold leading-6 text-gray-900 dark:text-white">
             {post?.title ?? cachedPost.title}
           </h1>
 

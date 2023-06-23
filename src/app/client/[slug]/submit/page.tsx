@@ -24,9 +24,9 @@ const page = async ({ params }: pageProps) => {
   return (
     <div className="flex flex-col items-start gap-6">
       {/* heading */}
-      <div className="pb-5 border-b border-gray-200">
+      <div>
         <div className="flex flex-wrap items-baseline -mt-2 -ml-2">
-          <h3 className="mt-2 ml-2 text-base font-semibold leading-6 text-gray-900">
+          <h3 className="mt-2 ml-2 text-base font-semibold leading-6 text-gray-900 dark:text-white">
             Create post in <span className="capitalize">{subreddit.name}</span>{' '}
             Community
           </h3>

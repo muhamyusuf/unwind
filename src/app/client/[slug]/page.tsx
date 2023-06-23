@@ -1,4 +1,3 @@
-// import PostFeed from '@/components/PostFeed'
 import MiniCreatePost from '@/components/MiniCreatePost';
 import PostFeed from '@/components/PostFeed';
 import { INFINITE_SCROLL_PAGINATION_RESULTS } from '@/config';

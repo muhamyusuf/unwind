@@ -79,7 +79,7 @@ const PostComment: FC<PostCommentProps> = ({
           className="w-6 h-6"
         />
         <div className="flex items-center ml-2 gap-x-2">
-          <p className="text-sm font-medium text-gray-900">
+          <p className="text-sm font-medium text-gray-900 dark:text-white">
             {comment.author.username}
           </p>
 
@@ -89,7 +89,9 @@ const PostComment: FC<PostCommentProps> = ({
         </div>
       </div>
 
-      <p className="mt-2 text-sm text-zinc-900">{comment.text}</p>
+      <p className="mt-2 text-sm dark:text-white text-zinc-900">
+        {comment.text}
+      </p>
 
       <div className="flex items-center gap-2">
         <CommentVotes

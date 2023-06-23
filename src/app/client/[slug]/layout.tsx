@@ -76,24 +76,28 @@ const Layout = async ({
                 Info {subreddit.name} Community
               </p>
             </div>
-            <dl className="px-6 py-4 text-sm leading-6 bg-white divide-y divide-gray-100">
+            <dl className="px-6 py-4 text-sm leading-6 bg-white divide-y divide-gray-100 dark:bg-slate-900">
               <div className="flex justify-between py-3 gap-x-4">
-                <dt className="text-gray-500">Created</dt>
-                <dd className="text-gray-700">
+                <dt className="text-gray-500 dark:text-zinc-50">Created</dt>
+                <dd className="text-gray-700 dark:text-zinc-50">
                   <time dateTime={subreddit.createdAt.toDateString()}>
                     {format(subreddit.createdAt, 'MMMM d, yyyy')}
                   </time>
                 </dd>
               </div>
               <div className="flex justify-between py-3 gap-x-4">
-                <dt className="text-gray-500">Members</dt>
+                <dt className="text-gray-500 dark:text-zinc-50">Members</dt>
                 <dd className="flex items-start gap-x-2">
-                  <div className="text-gray-900">{memberCount}</div>
+                  <div className="text-gray-900 dark:text-zinc-50">
+                    {memberCount}
+                  </div>
                 </dd>
               </div>
               {subreddit.creatorId === session?.user?.id ? (
                 <div className="flex justify-between py-3 gap-x-4">
-                  <dt className="text-gray-500">You created this community</dt>
+                  <dt className="text-gray-500 dark:text-zinc-50">
+                    You created this community
+                  </dt>
                 </div>
               ) : null}
 

@@ -17,7 +17,7 @@ const MiniCreatePost: FC<MiniCreatePostProps> = ({ session }) => {
   const pathName = usePathname();
 
   return (
-    <li className="overflow-hidden bg-white rounded-md shadow">
+    <li className="overflow-hidden bg-white rounded-md shadow dark:border dark:border-slate-800 dark:bg-slate-900">
       <div className="flex justify-between h-full gap-6 px-6 py-4">
         <div className="relative">
           <UserAvatar
@@ -33,18 +33,21 @@ const MiniCreatePost: FC<MiniCreatePostProps> = ({ session }) => {
           onClick={() => router.push(pathName + '/submit')}
           readOnly
           placeholder="Create post"
+          className="dark:dark:bg-[#030711] dark:text-white dark:border dark:border-slate-800"
         />
         <Button
           onClick={() => router.push(pathName + '/submit')}
           variant="ghost"
+          className="dark:dark:bg-[#030711] dark:text-white dark:border dark:border-slate-800"
         >
-          <ImageIcon className="text-zinc-600" />
+          <ImageIcon className="text-zinc-600 dark:text-white" />
         </Button>
         <Button
           onClick={() => router.push(pathName + '/submit')}
           variant="ghost"
+          className="dark:dark:bg-[#030711] dark:text-white dark:border dark:border-slate-800"
         >
-          <Link2 className="text-zinc-600" />
+          <Link2 className="text-zinc-600 dark:text-white" />
         </Button>
       </div>
     </li>
