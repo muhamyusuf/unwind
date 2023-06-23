@@ -17,7 +17,7 @@ export default async function SettingsPage() {
   }
 
   return (
-    <div className="max-w-4xl py-12 mx-auto">
+    <div className="max-w-4xl mx-auto">
       <div className="grid items-start gap-8">
         <h1 className="text-3xl font-bold md:text-4xl">Settings</h1>
 

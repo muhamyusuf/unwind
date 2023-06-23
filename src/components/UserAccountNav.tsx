@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { User } from 'next-auth';
 import { signOut } from 'next-auth/react';
+import { LogOut } from 'lucide-react';
 
 import {
   DropdownMenu,
@@ -60,6 +61,7 @@ export function UserAccountNav({ user }: UserAccountNavProps) {
           }}
         >
           Sign out
+          <LogOut className="w-4 h-4 ml-2" />
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

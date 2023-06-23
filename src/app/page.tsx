@@ -18,8 +18,8 @@ export default async function Home() {
         {/* @ts-expect-error server component */}
         {session ? <CustomFeed /> : <GeneralFeed />}
         {/* subreddit info */}
-        <div className="order-first overflow-hidden border border-gray-200 rounded-lg h-fit md:order-last">
-          <div className="px-6 py-4 bg-emerald-100">
+        <div className="order-first overflow-hidden border border-gray-200 rounded-lg h-fit ">
+          <div className="px-6 py-4">
             <p className="font-semibold py-3 flex items-center gap-1.5">
               <HomeIcon className="w-4 h-4" />
               Home
@@ -28,8 +28,11 @@ export default async function Home() {
           <dl className="px-6 py-4 -my-3 text-sm leading-6 divide-y divide-gray-100">
             <div className="flex justify-between py-3 gap-x-4">
               <p className="text-zinc-500">
-                Your personal Breadit frontpage. Come here to check in with your
-                favorite communities.
+                With <span className="font-bold text-black">UNWIND</span>{' '}
+                let&#8216;s Create, Enjoy, and Explore{' '}
+                <span className="font-bold text-black">MANY THINGS.</span>
+                Build your own community, or join other communities to sharing{' '}
+                <span className="font-bold text-black">ANY THINGS.</span>
               </p>
             </div>
 

@@ -105,7 +105,7 @@ export function UserNameForm({ user, className, ...props }: UserNameFormProps) {
           </div>
         </CardContent>
         <CardFooter>
-          <Button isLoading={isLoading}>Change name</Button>
+          <Button isLoading={isLoading}>Change username</Button>
         </CardFooter>
       </Card>
     </form>

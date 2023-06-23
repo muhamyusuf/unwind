@@ -9,8 +9,8 @@ export default function SignUp() {
         <Icons.logo className="w-6 h-6 mx-auto" />
         <h1 className="text-2xl font-semibold tracking-tight">Sign Up</h1>
         <p className="max-w-xs mx-auto text-sm">
-          By continuing, you are setting up a Breadit account and agree to our
-          User Agreement and Privacy Policy.
+          By continuing sign-in in UNWIND, you are setting up a account and
+          agree to our User Agreement and Privacy Policy.
         </p>
       </div>
       <UserAuthForm />

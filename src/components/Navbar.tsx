@@ -14,9 +14,7 @@ export default async function Navbar() {
         {/* logo */}
         <Link href="/" className="flex items-center gap-2">
           <Icons.logo className="w-8 h-8 sm:h-6 sm:w-6" />
-          <p className="hidden text-sm font-medium text-zinc-700 md:block">
-            Unwind
-          </p>
+          <p className="hidden text-sm font-bold text-black md:block">Unwind</p>
         </Link>
 
         {/* search bar */}
@@ -30,10 +28,6 @@ export default async function Navbar() {
             Sign In
           </Link>
         )}
-
-        {/* <Link href="/sign-in" className={buttonVariants()}>
-          Sign In
-        </Link> */}
       </div>
     </nav>
   );

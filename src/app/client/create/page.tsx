@@ -28,7 +28,7 @@ const Page = () => {
       if (err instanceof AxiosError) {
         if (err.response?.status === 409) {
           return toast({
-            title: 'Subreddit already exists.',
+            title: 'Name already exists.',
             description: 'Please choose a different name.',
             variant: 'destructive',
           });
@@ -70,13 +70,14 @@ const Page = () => {
         <div>
           <p className="text-lg font-medium">Name</p>
           <p className="pb-2 text-xs">
-            Community names including capitalization cannot be changed.
+            Community names including capitalization cannot be changed. Use (-)
+            to replace space.
           </p>
           <div className="relative">
             <Input
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              className="pl-6"
+              className="pl-2"
             />
           </div>
         </div>
